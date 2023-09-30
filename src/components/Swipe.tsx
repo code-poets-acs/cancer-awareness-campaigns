@@ -60,21 +60,6 @@ export default function Swiper() {
 
   return (
     <Box sx={{ maxHeight: 600, flexGrow: 1 }}>
-      {/* <Paper
-        square
-        elevation={0}
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          height: 50,
-          pl: 2,
-          bgcolor: 'background.default'
-        }}
-      >
-              <b>{images[activeStep].label}</b>
-
-      </Paper>
-      <br></br> */}
       <SwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
