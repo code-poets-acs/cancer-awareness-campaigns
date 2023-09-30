@@ -6,6 +6,7 @@ import { theme } from '@/styles'
 import WhyPrescreening from '@/components/WhyPrescreening'
 import Grid from '@mui/material/Grid'
 import CostBenefit from '@/components/CostBenefit'
+import Swiper from '@/components/Swipe'
 
 export default function Home() {
   return (
@@ -36,6 +37,9 @@ export default function Home() {
             </Grid>
             <Grid item xs={12} pt={3}>
               <CostBenefit></CostBenefit>
+            </Grid>
+            <Grid item xs={12}>
+              <Swiper></Swiper>
             </Grid>
           </Grid>
         </Box>
