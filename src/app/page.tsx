@@ -4,6 +4,8 @@ import Header from '@/components/Header'
 import ThemeProvider from '@mui/material/styles/ThemeProvider'
 import { theme } from '@/styles'
 import CompanyForm from '@/components/CompanyForm'
+import WhyPrescreening from '@/components/WhyPrescreening'
+
 import Grid from '@mui/material/Grid'
 
 export default function Home() {
@@ -15,6 +17,10 @@ export default function Home() {
           <Grid container>
             <Grid item xs={12}>
               <CompanyForm></CompanyForm>
+              <br></br>
+            </Grid>
+            <Grid container>
+            <WhyPrescreening></WhyPrescreening>
             </Grid>
           </Grid>
         </Box>
