@@ -1,13 +1,13 @@
 import React from 'react'
 import { Box, Grid, Typography, Paper } from '@mui/material'
 
-interface TwoColumnComponentProps {
+interface screeningObject {
   title: string
   text: string
   image: string
 }
 
-const ScreeningTips: React.FC<TwoColumnComponentProps> = ({ title, text, image }) => {
+const ScreeningTips: React.FC<screeningObject> = ({ title, text, image }) => {
   return (
     <Paper elevation={3} style={{ padding: '16px' }}>
       <Grid container spacing={3}>
