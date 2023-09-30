@@ -103,7 +103,7 @@ export default function CostBenefit() {
       </Grid>
       <Grid item xs={12} pt={3}>
         <Typography variant='body1'>
-          This number is calculated using the following model:{' '}
+          This number is calculated using the following model per employee:{' '}
           <i>
             Value<sub>pre-screening</sub> = (T<sub>late</sub> - T<sub>early</sub>) + (H<sub>late</sub> - H
             <sub>early</sub>) + L &times; Y
