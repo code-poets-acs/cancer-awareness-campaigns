@@ -19,8 +19,18 @@ export default function Home() {
               <CompanyForm></CompanyForm>
               <br></br>
             </Grid>
-            <Grid container>
-            <WhyPrescreening></WhyPrescreening>
+            <Grid item xs={12}>
+              <WhyPrescreening></WhyPrescreening>
+            </Grid>
+            <br></br>
+            <Grid item xs={12} style={{
+              padding: '15px',
+              textAlign: 'center',
+              border: '1px solid black'
+            }}>
+              <img src="record.png" style={{
+                width: '100%'
+              }} />
             </Grid>
           </Grid>
         </Box>

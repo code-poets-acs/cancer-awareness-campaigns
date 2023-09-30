@@ -8,12 +8,9 @@ function WhyPrescreening() {
   }
   return (
     <Grid
-      spacing={5}
-      style={{
-        bottom: '5'
-      }}
+      
     >
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <Grid container>
         <Grid item xs={3} style={gridStyle}>
           {`$0 cost to your organization`}
         </Grid>
@@ -28,7 +25,7 @@ function WhyPrescreening() {
         </Grid>
       </Grid>
 
-	  <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+	  <Grid container >
         <Grid item xs={3} style={gridStyle}>
           {'Organizations can host a much needed service for their employees at zero cost'}
         </Grid>
