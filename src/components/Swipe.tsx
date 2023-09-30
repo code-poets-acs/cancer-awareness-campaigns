@@ -4,23 +4,40 @@ import { useState } from 'react'
 import SwipeableViews from 'react-swipeable-views-react-18-fix'
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
+import ScreeningTips from './ScreeningTips';
 
 const images = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
-    imgPath: 'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60'
+    label: 'How Does #GetScreened Work?',
+    details: 'We encourage all employees to get the screenings they need to stay healthy and to catch problems early, while they can be treated more easily. Fortunately, the American Cancer Society is connected with some of the best health care providers in the world to provide high-quality care from your organization',
+    imgPath: '1.png'
   },
   {
-    label: 'Bird',
-    imgPath: 'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60'
+
+
+    label: 'HR Materials & Resources',
+    imgPath: '2.jpeg',
+    details: `The American Cancer Society provides company leadership with diversified marketing materials. This includes:
+    Flyers on the event
+    Videos and information on our providers
+    Templates for company message boards, newsletters, email blasts, bulletin boards or social channels to promote your #GetScreened initiative.
+    Cancer Screening Guide`
+
   },
   {
-    label: 'Bali, Indonesia',
-    imgPath: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250'
+    label: 'Connecting Employees to Providers',
+    imgPath: '3.jpeg',
+    details: `
+    The screening tests you need and when you need to get them might be different from other people because of your age, sex at birth, and certain risk factors you may have, this is why the American Cancer Society will tailor recommended screenings based on your employee data
+    Find a Provider navigation system will allow employees  to easily search for screening providers nearby`
+
   },
   {
-    label: 'Goč, Serbia',
-    imgPath: 'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60'
+    label: 'Providing Data on Initiative',
+    imgPath: '4.jpeg',
+    details: `Tracking healthcare milestones helps employers take a proactive approach to employee health and benefit management. 
+    #GetScreened not only supports the well-being of the workforce but also contributes to a healthier and more productive work environment, which can have a positive impact on the bottom line and the overall success of the organization.
+    `
   }
 ]
 
@@ -42,8 +59,8 @@ export default function Swiper() {
   }
 
   return (
-    <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
-      <Paper
+    <Box sx={{ maxHeight: 600, flexGrow: 1 }}>
+      {/* <Paper
         square
         elevation={0}
         sx={{
@@ -54,8 +71,10 @@ export default function Swiper() {
           bgcolor: 'background.default'
         }}
       >
-        <Typography>{images[activeStep].label}</Typography>
+              <b>{images[activeStep].label}</b>
+
       </Paper>
+      <br></br> */}
       <SwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
@@ -63,22 +82,12 @@ export default function Swiper() {
         enableMouseEvents
       >
         {images.map((step, index) => (
-          <div key={step.label}>
-            {Math.abs(activeStep - index) <= 2 ? (
-              <Box
-                component='img'
-                sx={{
-                  height: 255,
-                  display: 'block',
-                  maxWidth: 400,
-                  overflow: 'hidden',
-                  width: '100%'
-                }}
-                src={step.imgPath}
-                alt={step.label}
-              />
-            ) : null}
-          </div>
+          <ScreeningTips
+            key={index}
+            title={step.label}
+            image={step.imgPath}
+            text={step.details}
+          />
         ))}
       </SwipeableViews>
       <MobileStepper

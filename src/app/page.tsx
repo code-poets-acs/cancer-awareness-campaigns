@@ -15,6 +15,9 @@ export default function Home() {
         <Header></Header>
         <Box component='main' sx={{ flexGrow: 1, p: 15 }}>
           <Grid container>
+          <Grid item xs={12}>
+              <Swiper></Swiper>
+            </Grid>
             <Grid item xs={12}>
               <WhyPrescreening></WhyPrescreening>
             </Grid>
@@ -38,9 +41,7 @@ export default function Home() {
             <Grid item xs={12} pt={3}>
               <CostBenefit></CostBenefit>
             </Grid>
-            <Grid item xs={12}>
-              <Swiper></Swiper>
-            </Grid>
+            
           </Grid>
         </Box>
       </Box>
