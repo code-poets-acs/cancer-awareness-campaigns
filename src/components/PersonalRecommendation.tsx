@@ -13,6 +13,7 @@ export default function Recommendation() {
     <Box>
       <Box>
         <h2>{ageGroup}</h2>
+        <br/>
         <ul>
           {recommendations.map( (recommendation) =>
             (
