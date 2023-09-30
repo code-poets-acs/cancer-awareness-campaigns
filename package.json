@@ -15,7 +15,8 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-player": "^2.13.0"
+    "react-player": "^2.13.0",
+    "react-swipeable-views-react-18-fix": "^0.14.1"
   },
   "devDependencies": {
     "@types/node": "latest",
