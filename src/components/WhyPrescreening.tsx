@@ -5,14 +5,15 @@ function WhyPrescreening() {
     padding: '15px',
     textAlign: 'center',
     border: '1px solid black'
+
   }
   return (
     <Grid
       
     >
       <Grid container>
-        <Grid item xs={3} style={gridStyle}>
-          {`$0 cost to your organization`}
+        <Grid item xs={3}  style={gridStyle}>
+          <b>$0 cost to your organization</b>
         </Grid>
         <Grid item xs={3} style={gridStyle}>
           {`Less time away from ${'the office'}`}
