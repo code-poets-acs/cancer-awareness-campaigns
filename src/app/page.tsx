@@ -49,6 +49,12 @@ export default function Home() {
           </div>
           <Grid container>
             <Grid item xs={12}>
+              <CompanyForm></CompanyForm>
+              <br></br>
+            </Grid>
+          </Grid>
+          <Grid container>
+            <Grid item xs={12}>
               <WhyPrescreening></WhyPrescreening>
             </Grid>
             <br></br>
