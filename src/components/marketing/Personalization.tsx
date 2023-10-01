@@ -13,6 +13,10 @@ export const PersonalizedAdsValuePage = () => {
   const [topic, setTopic] = useState('cancer pre screening services are available')
   const [loading, setLoading] = useState(false)
   const [content, setContent] = useState<ContentGenerated>({ emails: [] })
+  const textStyle = {
+    fontSize: '14pt'
+  }
+  
 
   const callOpenAi = async () => {
     setLoading(true)
@@ -38,10 +42,10 @@ kep in mind the following:
   }
   return (
     <Box>
-      <Typography variant='h4' gutterBottom>
-        Need help Making Pre-screening Attractive?
+      <Typography variant='h3' gutterBottom>
+        <b>Generate my #GetScreened Campaign Materials Now!!!</b>
       </Typography>
-      <Typography variant='body1' paragraph>
+      <Typography style={textStyle} paragraph>
         Making your message stand out can be challenging, but with personalized ads, you can achieve just that.
       </Typography>
 

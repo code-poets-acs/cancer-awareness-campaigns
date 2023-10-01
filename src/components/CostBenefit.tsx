@@ -35,15 +35,19 @@ const formatter = new Intl.NumberFormat('en-US', {
   currency: 'USD'
 })
 
+const textStyle = {
+  fontSize: '14pt'
+}
+
 export default function CostBenefit() {
   const [employees, setEmployees] = useState(30)
   const [industry, setIndustry] = useState<keyof typeof INDUSTRIES>('Retail')
   return (
     <Grid container alignItems='center'>
       <Grid item xs={12}>
-        <Typography variant='h4'>But What is it Worth?</Typography>
+        <Typography variant='h3'><b>What is #GetScreened Worth?</b></Typography>
         <br></br>
-        <Typography variant='body1'>
+        <Typography style={textStyle}>
           Estimating the monetary value of pre-screening for cancer requires a multifaceted approach that considers both
           direct and indirect cost implications. At the direct level, savings emerge from differences in treatment costs
           between early and late-stage diagnoses. Early detection often means less aggressive and thus less expensive
@@ -59,7 +63,7 @@ export default function CostBenefit() {
           significant worth.
         </Typography>
         <br></br>
-        <p>Get a personalized estimate of the direct value for your organization:</p>
+        <p style={textStyle}>Get a personalized estimate of the direct value for your organization:</p>
       </Grid>
       <Grid item xs={3} pt={3}>
         <FormControl fullWidth>
@@ -102,7 +106,7 @@ export default function CostBenefit() {
         </Typography>
       </Grid>
       <Grid item xs={12} pt={3}>
-        <Typography variant='body1'>
+        <Typography style={textStyle}>
           This number is calculated using the following model per employee:{' '}
           <i>
             Value<sub>pre-screening</sub> = (T<sub>late</sub> - T<sub>early</sub>) + (H<sub>late</sub> - H

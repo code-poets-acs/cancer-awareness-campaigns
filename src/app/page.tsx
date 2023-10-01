@@ -11,7 +11,7 @@ import Grid from '@mui/material/Grid'
 import CostBenefit from '@/components/CostBenefit'
 import Swiper from '@/components/Swipe'
 import { PersonalizedAdsValuePage } from '@/components/marketing/Personalization'
-import { Divider } from '@mui/material'
+import { Divider, Typography } from '@mui/material'
 
 const flipStyles = {
   content: '',
@@ -35,6 +35,8 @@ export default function Home() {
         <Header></Header>
         <Box component='main' sx={{ flexGrow: 1, p: 15 }}>
           <div className='demo'>
+            <Typography variant='h3'><b>Why Implement #GetScreened?</b></Typography>
+            <br/>
             <Grid container spacing={1} columns={16}>
               <Grid container item spacing={1}>
                 <Grid item xs={3}>
@@ -117,24 +119,6 @@ export default function Home() {
             </Grid>
             <Grid item xs={12} py={3}>
               <Divider></Divider>
-            </Grid>
-            <br></br>
-            <Grid
-              item
-              xs={12}
-              style={{
-                padding: '15px',
-                textAlign: 'center',
-                border: '1px solid black'
-              }}
-            >
-              <img
-                src='record.png'
-                alt=''
-                style={{
-                  width: '100%'
-                }}
-              />
             </Grid>
           </Grid>
         </Box>
