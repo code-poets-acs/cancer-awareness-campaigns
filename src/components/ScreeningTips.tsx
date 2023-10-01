@@ -15,11 +15,7 @@ const ScreeningTips: React.FC<screeningObject> = ({ title, text, image }) => {
           <Typography variant='h3' gutterBottom>
             <b>{title}</b>
           </Typography>
-<<<<<<< HEAD
           <Typography  variant='h4'>{text}</Typography>
-=======
-          <Typography variant='body1'>{text}</Typography>
->>>>>>> 987c5cc1547a0178eb5b055a6b9c1f5d8d451cd7
         </Grid>
         <Grid item xs={6}>
           <Box component='img' src={image} alt={title} height='100%' width='100%' />
