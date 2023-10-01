@@ -2,19 +2,18 @@ import { Box, Button, Grid, MobileStepper, Paper, Typography, useTheme } from '@
 import { useState } from 'react'
 // @ts-ignore
 import SwipeableViews from 'react-swipeable-views-react-18-fix'
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import ScreeningTips from './ScreeningTips';
+import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft'
+import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight'
+import ScreeningTips from './ScreeningTips'
 
 const images = [
   {
     label: 'How Does #GetScreened Work?',
-    details: 'We encourage all employees to get the screenings they need to stay healthy and to catch problems early, while they can be treated more easily. Fortunately, the American Cancer Society is connected with some of the best health care providers in the world to provide high-quality care from your organization',
+    details:
+      'We encourage all employees to get the screenings they need to stay healthy and to catch problems early, while they can be treated more easily. Fortunately, the American Cancer Society is connected with some of the best health care providers in the world to provide high-quality care from your organization',
     imgPath: '1.png'
   },
   {
-
-
     label: 'HR Materials & Resources',
     imgPath: '2.jpeg',
     details: `The American Cancer Society provides company leadership with diversified marketing materials. This includes:
@@ -22,7 +21,6 @@ const images = [
     Videos and information on our providers
     Templates for company message boards, newsletters, email blasts, bulletin boards or social channels to promote your #GetScreened initiative.
     Cancer Screening Guide`
-
   },
   {
     label: 'Connecting Employees to Providers',
@@ -30,7 +28,6 @@ const images = [
     details: `
     The screening tests you need and when you need to get them might be different from other people because of your age, sex at birth, and certain risk factors you may have, this is why the American Cancer Society will tailor recommended screenings based on your employee data
     Find a Provider navigation system will allow employees  to easily search for screening providers nearby`
-
   },
   {
     label: 'Providing Data on Initiative',
@@ -67,12 +64,7 @@ export default function Swiper() {
         enableMouseEvents
       >
         {images.map((step, index) => (
-          <ScreeningTips
-            key={index}
-            title={step.label}
-            image={step.imgPath}
-            text={step.details}
-          />
+          <ScreeningTips key={index} title={step.label} image={step.imgPath} text={step.details} />
         ))}
       </SwipeableViews>
       <MobileStepper

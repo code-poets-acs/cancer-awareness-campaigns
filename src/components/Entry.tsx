@@ -5,10 +5,12 @@ export default function Entry() {
   return (
     <Box>
       <Box>
-        <h1>Get Screened for Organizations</h1><br/>
+        <h1>Get Screened for Organizations</h1>
+        <br />
       </Box>
       <Box>
-        <h2>Why should you get screened?</h2><br/>
+        <h2>Why should you get screened?</h2>
+        <br />
       </Box>
       <Box>
         <ReactPlayer url={'https://www.youtube.com/watch?v=uOFpbbK1bOg'} controls={true} />
