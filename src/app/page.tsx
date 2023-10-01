@@ -13,21 +13,6 @@ import Swiper from '@/components/Swipe'
 import { PersonalizedAdsValuePage } from '@/components/marketing/Personalization'
 import { Divider } from '@mui/material'
 
-const flipStyles = {
-  content: '',
-  backgroundImage: `url("/employee-health.png")`,
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'center',
-  height: '100%',
-  width: '100%',
-  position: 'absolute',
-  top: 0,
-  left: 0,
-  zIndex: -1,
-  opacity: 0.3
-}
-
 export default function Home() {
   return (
     <ThemeProvider theme={theme}>
