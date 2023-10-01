@@ -4,28 +4,34 @@ function WhyPrescreening() {
   const gridStyle = {
     padding: '15px',
     textAlign: 'center',
-    border: '1px solid black'
+    border: '1px solid black',
+
+  }
+  const gridStyleHeader = {
+    padding: '10px',
+    textAlign: 'center',
+    border: '1px solid black',
+    FontFace: 'bold'
+
   }
   return (
-    <Grid
-      
-    >
+    <Grid>
       <Grid container>
-        <Grid item xs={3} style={gridStyle}>
-          {`$0 cost to your organization`}
+        <Grid item xs={3} style={gridStyleHeader}>
+          <b> {`$0 cost to your organization`}</b>
         </Grid>
-        <Grid item xs={3} style={gridStyle}>
+        <Grid item xs={3} style={gridStyleHeader}>
           {`Less time away from ${'the office'}`}
         </Grid>
-        <Grid item xs={3} style={gridStyle}>
-          {'Less time away from the office'}
+        <Grid item xs={3} style={gridStyleHeader}>
+          {'American Cancer Society handles all aspects of the #GetScreened initiative'}
         </Grid>
-        <Grid item xs={3} style={gridStyle}>
-          {'Less time away from the office'}
+        <Grid item xs={3} style={gridStyleHeader}>
+          {'Wellness for your employees'}
         </Grid>
       </Grid>
 
-	  <Grid container >
+      <Grid container>
         <Grid item xs={3} style={gridStyle}>
           {'Organizations can host a much needed service for their employees at zero cost'}
         </Grid>

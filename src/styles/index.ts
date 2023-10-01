@@ -1,12 +1,21 @@
 import { createTheme } from '@mui/material/styles'
 
 export const theme = createTheme({
-  typography: {
-    h4: {
-      fontFamily: 'Poppins'
+  // typography: {
+  //   h3: {
+  //     fontFamily: 'Poppins'
+  //   },
+  //   allVariants: {
+  //     fontFamily: 'Source Sans 3'
+  //   }
+  // } 
+  palette: {
+    primary: {
+      main: '#DB0005', // Replace with your desired primary color
     },
-    allVariants: {
-      fontFamily: 'Source Sans 3'
-    }
-  }
+    secondary: {
+      main: '#2196f3', // Replace with your desired secondary color
+    },
+    // You can override other colors as well, such as error, warning, success, etc.
+  },
 })
