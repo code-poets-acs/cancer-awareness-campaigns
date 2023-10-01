@@ -19,8 +19,8 @@ export default function Home() {
       <Box sx={{ display: 'flex' }}>
         <Header></Header>
         <Box component='main' sx={{ flexGrow: 1, p: 15 }}>
+          <Typography variant='h3'><b>Why Implement #GetScreened?</b></Typography>
           <div className='demo'>
-            <Typography variant='h3'><b>Why Implement #GetScreened?</b></Typography>
             <br/>
             <Grid container spacing={1} columns={16}>
               <Grid container item spacing={1}>
