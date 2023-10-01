@@ -16,8 +16,9 @@ function FlipCard(props) {
               borderRadius: '4px',
               textAlign: 'center',
               padding: '10px',
-              height: '200px'
-          }} onClick={() => setFlip(!flip)}>{frontText}</div>
+              height: '200px',
+              border: '1px solid #000000'
+          }} onClick={() => setFlip(!flip)}><b>{frontText}</b></div>
           <div style={{
               background: '#fffff',
               fontSize: '16px',
@@ -26,8 +27,9 @@ function FlipCard(props) {
               borderRadius: '4px',
               textAlign: 'center',
               padding: '10px',
-              height: '200px'
-          }} onClick={() => setFlip(!flip)}>{backText}</div>
+              height: '200px',
+              border: '1px solid #000000'
+          }} onClick={() => setFlip(!flip)}><b>{backText}</b></div>
       </ReactCardFlip>
   );  
 }
