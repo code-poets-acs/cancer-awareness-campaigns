@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+3');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -30,8 +33,6 @@ a {
   height: 60%;
   width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
   z-index: -1;
   opacity: 0.3;
 }

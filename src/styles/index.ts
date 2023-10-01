@@ -11,7 +11,7 @@ export const theme = createTheme({
   // } 
   palette: {
     primary: {
-      main: '#ff0000', // Replace with your desired primary color
+      main: '#DB0005', // Replace with your desired primary color
     },
     secondary: {
       main: '#2196f3', // Replace with your desired secondary color
