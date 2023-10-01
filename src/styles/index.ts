@@ -8,14 +8,14 @@ export const theme = createTheme({
   //   allVariants: {
   //     fontFamily: 'Source Sans 3'
   //   }
-  // } 
+  // }
   palette: {
     primary: {
-      main: '#DB0005', // Replace with your desired primary color
+      main: '#DB0005' // Replace with your desired primary color
     },
     secondary: {
-      main: '#2196f3', // Replace with your desired secondary color
-    },
+      main: '#2196f3' // Replace with your desired secondary color
+    }
     // You can override other colors as well, such as error, warning, success, etc.
-  },
+  }
 })

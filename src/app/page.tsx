@@ -15,7 +15,7 @@ import { Divider } from '@mui/material'
 
 const flipStyles = {
   content: '',
-  backgroundImage:`url("/employee-health.png")`,
+  backgroundImage: `url("/employee-health.png")`,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
