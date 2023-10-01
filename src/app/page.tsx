@@ -91,11 +91,32 @@ export default function Home() {
             </Grid>
           </div>
           <Grid container>
-            <Grid item xs={12}>
-              <Swiper></Swiper>
+            <Grid item xs={12} py={3} pb={12}>
+              <Divider></Divider>
             </Grid>
             <Grid item xs={12}>
               <WhyPrescreening></WhyPrescreening>
+            </Grid>
+            <Grid item xs={12} py={3}>
+              <Divider></Divider>
+            </Grid>
+            <Grid item xs={12} pt={3}>
+              <CostBenefit></CostBenefit>
+            </Grid>
+            <Grid item xs={12} py={3}>
+              <Divider></Divider>
+            </Grid>
+            <Grid item xs={12}>
+              <Swiper></Swiper>
+            </Grid>
+            <Grid item xs={12} py={3}>
+              <Divider></Divider>
+            </Grid>
+            <Grid item xs={12}>
+              <PersonalizedAdsValuePage></PersonalizedAdsValuePage>
+            </Grid>
+            <Grid item xs={12} py={3}>
+              <Divider></Divider>
             </Grid>
             <br></br>
             <Grid
@@ -114,15 +135,6 @@ export default function Home() {
                   width: '100%'
                 }}
               />
-            </Grid>
-            <Grid item xs={12} pt={3}>
-              <CostBenefit></CostBenefit>
-            </Grid>
-            <Grid item xs={12} py={3}>
-              <Divider></Divider>
-            </Grid>
-            <Grid item xs={12}>
-              <PersonalizedAdsValuePage></PersonalizedAdsValuePage>
             </Grid>
           </Grid>
         </Box>

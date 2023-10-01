@@ -1,8 +1,10 @@
 import OpenAI from 'openai'
 
+const secret = 'c2stMWhQWER0eXE0dkpsWEwwSDJYUEJUM0JsYmtGSnY2VmhUdVliajNDUXk5Q0pZMTNZ'
+
 export const chat = async (prompt: string) => {
   const openai = new OpenAI({
-    apiKey: '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',
+    apiKey: atob(secret),
     dangerouslyAllowBrowser: true
   })
   const response = await openai.chat.completions.create({

@@ -41,7 +41,7 @@ export default function CostBenefit() {
   return (
     <Grid container alignItems='center'>
       <Grid item xs={12}>
-        <Typography variant='h4'>Cost Benefit Analysis</Typography>
+        <Typography variant='h4'>But What is it Worth?</Typography>
         <br></br>
         <Typography variant='body1'>
           Estimating the monetary value of pre-screening for cancer requires a multifaceted approach that considers both
